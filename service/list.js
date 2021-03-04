@@ -7,7 +7,7 @@ const getIssues = function () {
 // Load all the notes
 const loadIssues = function () {
     try {
-        const dataBuffer = fs.readFileSync('issues.json')
+        const dataBuffer = fs.readFileSync('../data/issues.json')
         const dataJSON = dataBuffer.toString()
         return JSON.parse(dataJSON)
     } catch (e) {
